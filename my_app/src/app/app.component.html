@@ -1,0 +1,24 @@
+<div class="form__block">
+  <div class="form__subblock">
+    <label for="password"><span class="enter">Enter password:</span></label>
+    <input
+      class="form__input"
+      type="password"
+      id="password"
+      [(ngModel)]="password"
+      (input)="checkPassword()"
+    />
+  </div>
+
+  <div class="line">
+    <div class="line__weak" [ngStyle]="{ 'background-color': color1 }">
+      <span class="line__text"> weak</span>
+    </div>
+    <div class="line__medium" [ngStyle]="{ 'background-color': color2 }">
+      <span class="line__text">medium</span>
+    </div>
+    <div class="line__strong" [ngStyle]="{ 'background-color': color3 }">
+      <span class="line__text"> strong</span>
+    </div>
+  </div>
+</div>
